@@ -29,6 +29,41 @@ print(car == 'Corsa')
 print("\nIs car == 'Caminhonete'? I predict False.") 
 print(car == 'Caminhonete')
 
+#5.2
+game = 'Dark Souls'
+print("\nIs game == 'Dark Souls'? I predict True")
+print(game == 'Dark Souls')
+print("\nIs game == 'Elden Ring'? I predict False")
+print(game == 'Elden Ring')
+
+rpg = 'Tormenta20'
+print("\nIs rpg == 'Tormenta20'? I predict False")
+print(rpg.lower() == 'Dark Souls')
+print("\nIs rpg == 'tormenta20'? I predict True")
+print(rpg.lower() == 'tormenta20')
+
+number = 7
+print("\nIs number == 7? I predict True")
+print(number == 7)
+print("\nIs number == 8? I predict False")
+print(number == 8)
+print("\nIs number > 5? I predict True")
+print(number > 5)
+print("\nIs number < 1? I predict False")
+print(number < 1)
+print("\nIs number >= 3? I predict True")
+print(number >= 7)
+print("\nIs number <= 10? I predict True")
+print(number <= 10)
+
+game = 'Dark Souls 1'
+secund_game = 'Dark Souls 2'
+print("\nIs game == 'Dark Souls' or secund game == 'Elden ring'? I predict True")
+print(game == 'Dark Souls' or secund_game == 'Elden ring')
+print("\nIs game == 'Dark Souls' and secund game == 'Elden ring'? I predict False")
+print(game == 'Elden Ring' and secund_game == 'Elden ring')
+
+
 #5.3
 alien_color = 'green'
 
@@ -139,7 +174,3 @@ for number in numbers:
     elif number >= 4:
         posicao = 'th'
     print("{}{}".format(number,posicao))
-    
-#5.12
-
-#5.13

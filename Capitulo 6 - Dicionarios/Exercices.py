@@ -109,5 +109,3 @@ for city, info_city in cities.items():
     print("\tLocalizado em: {}".format(country.title()))
     print("\tCom a população de: {}".format(population))
     print("\tCuriosidade: {}".format(fact))
-
-#6.12
