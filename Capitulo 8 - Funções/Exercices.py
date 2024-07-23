@@ -113,4 +113,6 @@ while True:
     if a_name == 'q':
         break
     musica = make_album(p_name, a_name)
-    print(musica)'''
+    print(musica)
+
+Teste'''
