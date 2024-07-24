@@ -97,7 +97,7 @@ o título de um álbum. Depois que tiver essas informações, chame make_album()
 com as entradas do usuário e apresente o dicionário criado. Lembre-se de incluir
 um valor de saída no laço while.
 
-def make_album(artista, album, faixas=""):
+def make_album(artista, album):
     info = {'artista': artista, 'album': album}
 
     return info
