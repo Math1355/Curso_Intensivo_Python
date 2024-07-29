@@ -114,5 +114,124 @@ while True:
         break
     musica = make_album(p_name, a_name)
     print(musica)
+'''
 
-Teste'''
+#8.9
+'''8.9 – Mágicos: Crie uma lista de nomes de mágicos. Passe a lista para uma
+função chamada show_magicians() que exiba o nome de cada mágico da
+lista.
+
+def show_magic(magics):
+    print("\nHere is the list of Magic:")
+    for magic in magics:
+        print(magic)
+
+
+magic = ['Houdini', 'Richiardi Jr', 'Jasper Maskelyne']
+show_magic(magic)'''
+
+
+#8.10
+'''8.10 – Grandes mágicos: Comece com uma cópia de seu programa do
+Exercício 8.9. Escreva uma função chamada make_great() que modifique a
+lista de mágicos acrescentando a expressão o Grande ao nome de cada
+mágico. Chame show_magicians() para ver se a lista foi realmente modificada.
+
+def make_great(magic, great_magic):
+    while magic:
+        current_magic = 'The Great ' + magic.pop()
+        great_magic.append(current_magic)
+
+
+def show_magic(great_magic):
+    print("Here is the list of Magic:")
+    for magic in great_magic:
+        print(magic)
+
+
+magic = ['Houdini', 'Richiardi Jr', 'Jasper Maskelyne']
+great_magic = []
+
+make_great(magic, great_magic)
+show_magic(great_magic)'''
+
+#8.11
+'''8.11 – Mágicos inalterados: Comece com o trabalho feito no Exercício 8.10.
+Chame a função make_great() com uma cópia da lista de nomes de mágicos.
+Como a lista original não será alterada, devolva a nova lista e armazene-a em
+uma lista separada. Chame show_magicians() com cada lista para mostrar que
+você tem uma lista de nomes originais e uma lista com a expressão o Grande
+adicionada ao nome de cada mágico.
+
+def make_great(magic, great_magic):
+    while magic:
+        current_magic = 'The Great ' + magic.pop()
+        great_magic.append(current_magic)
+
+
+def show_magic(great_magic):
+    print("Here is the list of Magic:")
+    for magic in great_magic:
+        print(magic)
+
+
+magic = ['Houdini', 'Richiardi Jr', 'Jasper Maskelyne']
+great_magic = []
+
+make_great(magic[:], great_magic)
+show_magic(great_magic)
+print(magic)'''
+
+#8.12  
+'''Sanduíches: Escreva uma função que aceite uma lista de itens que uma
+pessoa quer em um sanduíche. A função deve ter um parâmetro que agrupe
+tantos itens quantos forem fornecidos pela chamada da função e deve
+apresentar um resumo do sanduíche pedido. Chame a função três vezes usando
+um número diferente de argumentos a cada vez.
+
+def make_sandwich(*toppings):
+    print("\nMaking a sandwich with the follewing toppings:")
+    for topping in toppings:
+        print("- " + topping)
+
+make_sandwich('Egg')
+make_sandwich('lettuce', 'mozzarella', 'tomato')'''
+
+#8.13 
+'''Perfil do usuário: Comece com uma cópia de user_profile.py, da página
+210. Crie um perfil seu chamando build_profile(), usando seu primeiro nome
+e o sobrenome, além de três outros pares chave-valor que o descrevam.
+
+def build_profile(first, last, **user_info):
+    """Constrói um dicionario contendo tudo que sabemos sobre um usuario."""
+    profile = {}
+    profile['first_name'] = first
+    profile['last_name'] = last
+    for key, value in user_info.items():
+        profile[key] = value
+    return profile
+
+user_profile = build_profile('Matheus', 'Silva', location='Brazil', field='Big Data')
+print(user_profile)'''
+
+#8.14 
+'''Carros: Escreva uma função que armazene informações sobre um carro
+em um dicionário. A função sempre deve receber o nome de um fabricante e um
+modelo. Um número arbitrário de argumentos nomeados então deverá ser
+aceito. Chame a função com as informações necessárias e dois outros pares
+nome-valor, por exemplo, uma cor ou um opcional. Sua função deve ser
+apropriada para uma chamada como esta: car = make_car(‘subaru’, ‘outback’,
+color=’blue’, tow_package=True) Mostre o dicionário devolvido para garantir
+que todas as informações foram armazenadas corretamente.
+
+def build_car(producer, model, **car_info):
+    profile = {}
+    profile['producer_name'] = producer
+    profile['model_name'] = model
+    for key, value in car_info.items():
+        profile[key] = value
+    return profile
+
+car_profile = build_car('subaru', 'outback', color='red', tow_packege=True)
+print(car_profile)'''
+
