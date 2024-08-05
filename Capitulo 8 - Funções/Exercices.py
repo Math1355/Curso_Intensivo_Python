@@ -235,3 +235,43 @@ def build_car(producer, model, **car_info):
 car_profile = build_car('subaru', 'outback', color='red', tow_packege=True)
 print(car_profile)'''
 
+#8.15 
+'''Impressão de modelos: Coloque as funções do exemplo print_models.py
+em um arquivo separado de nome printing_functions.py. Escreva uma instrução
+import no início de print_models.py e modifique o arquivo para usar as funções
+importadas.
+import printing_functions
+
+unprinted_designs = ['iphone case', 'robot pendant', 'dodecahedron']
+completed_models = []
+
+#print_models(unprinted_designs[:], completed_models)
+printing_functions.print_models(unprinted_designs, completed_models)
+printing_functions.show_completed_models(completed_models)'''
+
+#8.16
+'''Importações: Usando um programa que você tenha escrito e que
+contenha uma única função, armazene essa função em um arquivo separado.
+Importe a função para o arquivo principal de seu programa e chame-a usando
+cada uma das seguintes abordagens: import nome_do_módulo from
+nome_do_módulo import nome_da_função from nome_do_módulo import
+nome_da_função as nf import nome_do_módulo as nm from nome_do_módulo import
+*
+
+#import pets_functions
+#from pets_functions import describe_pet
+#from pets_functions import describe_pet as dp
+#import pets_functions as pf
+from pets_functions import *
+
+#pets_functions.describe_pet(animal_type='hamster', pet_name='harry')   
+#describe_pet(animal_type='hamster', pet_name='harry')  
+#dp(animal_type='hamster', pet_name='harry')
+#pf.describe_pet(animal_type='hamster', pet_name='harry')
+describe_pet(animal_type='hamster', pet_name='harry')'''
+
+#8.17 
+'''Estilizando funções: Escolha quaisquer três programas que você escreveu
+neste capítulo e garanta que estejam de acordo com as diretrizes de estilo
+descritas nesta seção.'''
+#Estão ok
